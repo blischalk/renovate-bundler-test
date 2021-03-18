@@ -8,6 +8,6 @@ module.exports = {
   onboardingBranch: "renovation-onboarding",
   enabledManagers: ["bundler", "dockerfile", "npm"],
   repositories: [
-    {repository: 'blischalk/renovate-bundler-test', rangeStrategy: 'update-lockfile'}
+    {repository: 'blischalk/renovate-bundler-test', rangeStrategy: 'update-lockfile', "bundler": { "fileMatch": ["Gemfile-current"] }}
   ]
 }
